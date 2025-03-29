@@ -1,0 +1,91 @@
+/* =======================
+   CSS Variables & Resets
+   ======================= */
+   :root {
+    --font-family: 'Outfit', sans-serif;
+  
+    --color-bg: hsl(212, 45%, 89%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-text-dark: hsl(218, 44%, 22%);
+    --color-text-light: hsl(216, 15%, 48%);
+  
+    --card-width: 290px;
+    --card-radius: 16px;
+    --qr-radius: 12px;
+  
+    --spacing-sm: 12px;
+    --spacing-md: 11px;
+    --spacing-lg: 25px;
+  
+    --shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* =======================
+     Reset & Base Styles
+     ======================= */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: var(--font-family);
+    background-color: var(--color-bg);
+  }
+  
+  /* =======================
+     Layout
+     ======================= */
+  .page-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md);
+  }
+  
+  /* =======================
+     Card Component
+     ======================= */
+  .card {
+    height: 60%;
+    background-color: var(--color-white);
+    border-radius: var(--card-radius);
+    padding: var(--spacing-md);
+    width: var(--card-width);
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  
+  .qr-image {
+    width: 100%;
+    border-radius: var(--qr-radius);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .card h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-text-dark);
+    margin-bottom: var(--spacing-sm);
+  }
+  
+  .card p {
+    font-size: 15x;
+    color: var(--color-text-light);
+  }
+
+   /* =======================
+     Footer
+     ======================= */
+  
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

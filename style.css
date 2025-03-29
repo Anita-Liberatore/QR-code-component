@@ -50,7 +50,6 @@
      Card Component
      ======================= */
   .card {
-    height: 60%;
     background-color: var(--color-white);
     border-radius: var(--card-radius);
     padding: var(--spacing-md);
